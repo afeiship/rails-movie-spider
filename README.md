@@ -1,6 +1,13 @@
 # rails-movie-spider
 > Movie spider based on rails.
 
+## reset db:
+```sql
+TRUNCATE TABLE pages;
+TRUNCATE TABLE posts;
+TRUNCATE TABLE urls;
+```
+
 
 ## reset task:
 ```ruby
