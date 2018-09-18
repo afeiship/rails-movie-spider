@@ -8,9 +8,9 @@ rake spider:reset_pages                 # reset pages
 rake spider:reset_urls                  # reset urls
 ```
 
-## others:
+## fetch pages/urls/posts:
 ```ruby
 rake example_com:fetch_pages                # Fetch pages
-rake example_com:fetch_posts                # Fetch posts
 rake example_com:fetch_urls                 # Fetch urls
+rake example_com:fetch_posts                # Fetch posts
 ```
