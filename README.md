@@ -4,7 +4,7 @@
 
 ## reset task:
 ```ruby
-
+rake spider:reset_pages                 # reset pages
 rake spider:reset_urls                  # reset urls
 ```
 
