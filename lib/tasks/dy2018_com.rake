@@ -11,7 +11,7 @@ namespace :dy2018 do
 
     Dy2018ComProcessor.latest_movie_pages.each do |item1|
       puts "grabbing at url: #{item1}"
-      Spider::Page.create(
+      Page.create(
           key: Dy2018ComProcessor.key(item1),
           url: item1,
       )
@@ -19,7 +19,7 @@ namespace :dy2018 do
 
     Dy2018ComProcessor.gndy_movie_pages.each do |item2|
       puts "grabbing at url: #{item2}"
-      Spider::Page.create(
+      Page.create(
           key: Dy2018ComProcessor.key(item2),
           url: item2,
       )
@@ -27,7 +27,7 @@ namespace :dy2018 do
 
     Dy2018ComProcessor.gndyy_movie_pages.each do |item3|
       puts "grabbing at url: #{item3}"
-      Spider::Page.create(
+      Page.create(
           key: Dy2018ComProcessor.key(item3),
           url: item3,
       )

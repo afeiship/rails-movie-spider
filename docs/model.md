@@ -5,7 +5,7 @@
 ```shell
 rails g model Page key:string url:string grabbed:boolean
 rails g model Url key:string url:string grabbed:boolean
-rails g model Post title:string content:text category_id:integer rate:float cover:string release_date:datetime attachments:string{2000}
+rails g model Post title:string content:text category_id:integer rate:float cover:string release_date:datetime attachments:string{4000}
 ```
 
 ## primary key use key:
@@ -18,7 +18,7 @@ rails g model Post title:string content:text category_id:integer rate:float cove
     t.float :rate
     t.string :cover
     t.datetime :release_date
-    t.string :attachments, limit: 2000
+    t.string :attachments, limit: 4000
 
     t.timestamps
   end

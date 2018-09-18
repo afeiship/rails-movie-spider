@@ -39,8 +39,9 @@ class BaseProcessor
     end
   end
 
-  def self.movie_posts processor_class
-    threads = Url.all.each_slice(25).map do |urls|
+  def self.movie_posts(processor_class)
+    size = Url.count / 150
+    threads = Url.all.each_slice(size).map do |urls|
       Thread.new do
         urls.each do |sp_url|
           url = sp_url.url
